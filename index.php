@@ -237,8 +237,7 @@ else
 				</div>
 			</section>
 
-			<section>
-				<div class="expertise" id="Expertise">
+			<section class="expertise" id="Expertise">
 					<div class='container'>
 						<div class='row-fluid'>
 							<div class="holder">
@@ -251,10 +250,10 @@ else
 							</div>
 						</div>
 					</div>
-				</div>
+			
 			</section>
-			<section>
-				<div class="clients" id="clients">
+			<section class="clients" id="clients">
+				
 					<div class='container'>
 						<div class='row-fluid'>
 							<div class="clients-main span12">
@@ -270,11 +269,11 @@ else
 							</div>
 						</div>
 					</div>
-				</div>
+	
 
 			</section>
-			<section>
-				<div class="Associates" id="Associates">
+			<section class="Associates" id="Associates">
+			
 					<div class='container'>
 						<div class='row-fluid'>
 							<div class="Associates-main span12">
@@ -297,10 +296,9 @@ else
 								</div>
 							</div>
 						</div>
-
 					</div>
-				</div>
 			</section>
+			
 			<section>
 				<div id="Testimonial" class="tiled">
 					<div class="container">
@@ -308,21 +306,18 @@ else
 					</div>
 				</div>
 			</section>
-			<section>
-				<div id="twitter">
+			
+			<section id="twitter">
 					<div class="container">
 						<jdoc:include type="modules" name="twitter" style="none" />
 					</div>
-				</div>
 			</section>
-			<section>
-
-				<div id="Contact">
+			
+			<section id="Contact">
 					<!--Get in touch-->
 					<div class="container">
 						<jdoc:include type="modules" name="contact" style="xhtml" />
 					</div>
-				</div>
 
 				<!-- Footer -->
 				<!--Get in touch as well-->
@@ -364,14 +359,16 @@ else
 					move_here_y = (displayed_content_top - display_here_top);
 					console.log("move_here_y= " + move_here_y);
 
+					
+					//resets last moved section if it has been moved
 					if (typeof last_content != 'undefined') {
 						console.log("last_content = " + last_content);
 						if (displayed_content != last_content) {
 							console.log(" -------------  transform state of last_content" + last_content + " = " + $(last_content).css("transform"));
 							$(last_content).css("transform", "none");
-							$(last_content).css("transform", "none");
-							$(last_content).css("position", "relative");
+							//$(last_content).css("position", "relative");
 							$(last_content).css("border", "solid 0px");
+							$(last_content).css("padding-top", "0");
 							console.log("RESETTING");
 							console.log(" #############  RESETTING transform state of last_content" + last_content + " = " + $(last_content).css("transform"));
 							last_content = displayed_content;
@@ -387,14 +384,15 @@ else
 
 
 					if ($(displayed_content).css("transform") == 'none') {
-						//$(displayed_content).css("transform", "translate(0px,-" + move_here_y + "px)");
-						$(displayed_content).css("top", "100vh)");
-						//$(displayed_content).css("transform", "translate(0px,123px)");
-						//$(displayed_content).css("position", "absolute");
+						$(displayed_content).css("transform", "translate(0px,-" + move_here_y + "px)"); // moves current piece up from original place to just under menu at the top
+
+						//$(displayed_content).css("top", "100vh)");
+						//$(displayed_content).css("position", "relative");
 						//$(last_content).css("position", "relative");
-						//$(displayed_content).css("z-index", "100");
-						//$(last_content).css("z-index","0");
+						$(displayed_content).css("z-index", "1000");
+						$(last_content).css("z-index","0");
 						$(displayed_content).css("border-bottom", "solid 100vh rgba(0,0,0,0.5)");
+						$(displayed_content).css("padding-top", "100vh");
 						$(displayed_content).css("border-left", "solid 10vw rgba(0,0,0,0.5)");
 						$(displayed_content).css("border-right", "solid 10vw rgba(0,0,0,0.5)");
 						$(displayed_content).css("border-top", "solid 10vh rgba(0,0,0,0.5)");
@@ -414,8 +412,9 @@ else
 						$("body").css("overflow-y", "scroll");
 						$(wrapper).css("overflow-y", "auto");
 						$(displayed_content).css("transform", "none");
-						$(displayed_content).css("position", "relative");
+						//$(displayed_content).css("position", "relative");
 						$(displayed_content).css("border", "solid 0px");
+						$(displayed_content).css("padding-top", "0");
 
 
 

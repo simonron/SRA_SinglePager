@@ -30,11 +30,11 @@ div#Associates{
 	position:absolute;
 	margin-top:-79px;
 }*/
-div#Associates,
-div#clients,
-div#Expertise,
-div#twitter,
-div#Contact {
+#Associates,
+#clients,
+#Expertise,
+#twitter,
+#Contact {
 		position:relative;
 	//margin-top:-79px;
 	-webkit-transition-duration: 1s;
@@ -139,7 +139,7 @@ div#Contact {
 			}
 		}
 	}
-	div.expertise {
+	.expertise {
 		background: $darkBlue;
 		div.holder {
 			width: 100%;
@@ -212,30 +212,30 @@ div#Contact {
 			}
 		}
 	}
-	div.clients div.clients-main.span12 div {
+	.clients div.clients-main.span12 div {
 		text-align: center;
 		h3 {
 			font-size: 22px;
 			color: $darkBlue;
 		}
 	}
-	div.clients div.clients-main .span12 img {
+	.clients div.clients-main .span12 img {
 		display: block;
 	}
-	div.clients .clients-left .span6 img,
-	div.clients .clients-right .span6 img {
+	.clients .clients-left .span6 img,
+	.clients .clients-right .span6 img {
 		display: none !important;
 	}
-	div.clients div.container div.row-fluid div.clients-left.span6,
-	div.clients div.container div.row-fluid div.clients-right.span6 {
+	.clients div.container div.row-fluid div.clients-left.span6,
+	.clients div.container div.row-fluid div.clients-right.span6 {
 		display: none;
 	}
-	div.Associates {
+	.Associates {
 		background: #f0f0f0;
 		padding-bottom: 5px;
 		overflow-y: hidden;
 	}
-	div.Associates-main {
+	.Associates-main {
 		background: $lightGrey;
 		text-align: center;
 		h3 {
@@ -244,7 +244,7 @@ div#Contact {
 		}
 		padding:20px 0;
 	}
-	div.Associates {
+	.Associates {
 		div.row-fluid {
 			background: $lightGrey;
 			padding-bottom: 20px;
@@ -302,7 +302,7 @@ div#Contact {
 			}
 		}
 	}
-	div.clients div.clients-main.span12 div {
+	.clients div.clients-main.span12 div {
 		display: block;
 	}
 	.clients-left .span6,
@@ -311,7 +311,7 @@ div#Contact {
 	}
 	/*Twitter feed */
 	
-	div#twitter {
+	#twitter {
 		/*		word-break: break-all;*/
 		.container {
 			background: #ffffff;
@@ -376,7 +376,7 @@ div#Contact {
 	}
 	/*get in touch*/
 	
-	div#Contact,
+	#Contact,
 	div.footer,
 	div.footer .row-fluid {
 		background: $darkBlue;
@@ -461,7 +461,7 @@ div#Contact {
 			width: 485px;
 
 		}
-		div.Associates {
+		.Associates {
 			div#pic_holder {
 				width: 95%;
 			}
@@ -480,9 +480,9 @@ div#Contact {
 			background: #ffffff;
 			margin-top: 79px;
 		}
-div#clients,
-		div#Expertise,
-		div#Associates{
+    #clients,
+		#Expertise,
+		#Associates{
 	position:absolute;
 	margin-top:-106px;
 }
@@ -526,14 +526,18 @@ div#clients,
 				width: 50%;
 			}
 		}
-		div.clients div.clients-main.span12 div {
+		
+		.clients div.clients-main.span12 div {
 			display: block;
 		}
-		div.clients div.container div.row-fluid div.clients-left.span6,
-		div.clients div.container div.row-fluid div.clients-right.span6 {
+		
+		.clients div.container div.row-fluid div.clients-left.span6,
+		
+		.clients div.container div.row-fluid div.clients-right.span6 {
 			display: none;
 		}
-		div.Associates {
+		
+		.Associates {
 			div#pic_holder {
 				width: 50%;
 				div {
@@ -585,7 +589,8 @@ div#clients,
 		.home .row-fluid .span6 {
 			width: 100%;
 		}
-		div.expertise div.holder {
+		
+		.expertise div.holder {
 			width: 115%;
 			h3 {
 				text-align: center;
@@ -593,15 +598,19 @@ div#clients,
 				margin: -30px auto 10px;
 			}
 		}
-		div.expertise .expertise-right ul {
+		
+		.expertise .expertise-right ul {
 			float: left;
 			padding-bottom:10px;
 		}
-		div.clients div.clients-main.span12 div img{
+		
+		.clients div.clients-main.span12 div img{
 			display: none;
 		}
-		div.clients div.container div.row-fluid div.clients-left.span6,
-		div.clients div.container div.row-fluid div.clients-right.span6 {
+		
+		.clients div.container div.row-fluid div.clients-left.span6,
+		
+		.clients div.container div.row-fluid div.clients-right.span6 {
 			display: inline-block;
 			//background: #f00;
 			width: 100%;
@@ -624,7 +633,8 @@ div#clients,
 				}
 			}
 		}
-		div.Associates {
+		
+		.Associates {
 			div#pic_holder {
 				width: 50%;
 				div {
@@ -649,7 +659,8 @@ div#clients,
 			}
 		}
 		/*get in touch*/
-		div#Contact,
+		
+		#Contact,
 		div.footer,
 		div.footer .row-fluid {
 			ul {
@@ -678,7 +689,8 @@ div#clients,
 				}
 			}
 		}
-		div#twitter .container {
+		
+		#twitter .container {
 			width: 100%;
 		}
 		.wk-twitter article {
@@ -703,7 +715,8 @@ div#clients,
 			overflow: hidden;
 		}
 
-	div.expertise div.holder h3 {
+	
+		.expertise div.holder h3 {
 		position:absolute;
   text-align: center;
   //float: none;
@@ -711,14 +724,18 @@ div#clients,
 		width:100%;
   margin: -45px auto 10px;
 }
-		div.expertise div.custom ul li {
+		
+		.expertise div.custom ul li {
 			width: 71vw;
 		}
-		div.clients div.clients-main.span12 div img {
+		
+		.clients div.clients-main.span12 div img {
 			display: none;
 		}
-		div.clients div.container div.row-fluid div.clients-left.span6,
-		div.clients div.container div.row-fluid div.clients-right.span6 {
+		
+		.clients div.container div.row-fluid div.clients-left.span6,
+		
+		.clients div.container div.row-fluid div.clients-right.span6 {
 			display: inline;
 			//background: #f00;
 			ul {
@@ -735,7 +752,8 @@ div#clients,
 				}
 			}
 		}
-		div.Associates {
+		
+		.Associates {
 			div#pic_holder {
 				width: 50%;
 				div {
@@ -755,7 +773,8 @@ div#clients,
 			}
 		}
 		/*get in touch*/
-		div#Contact,
+		
+		#Contact,
 		div.footer,
 		div.footer .row-fluid {
 			ul {

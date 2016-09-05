@@ -1,0 +1,13 @@
+@media (min-width: 768px) and (max-width: 990px) {/* specific width of ipad portrait down to iPod landscape */
+/* #content { background-color:#999} */
+body{
+width:100% !important;
+}
+
+div.header div.header-inner div.header-search {
+	position:inherit;
+	left:0px;
+	float:right;
+	margin-top:-20px;
+}
+}

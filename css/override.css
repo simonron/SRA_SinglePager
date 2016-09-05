@@ -1,0 +1,688 @@
+body {
+  background: #ffffff;
+  overflow-x: hidden; }
+
+body.site {
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  background: #ffffff;
+  margin-top: 79px; }
+
+div.mobile-menu-bar {
+  width: 180%;
+  padding-left: 80%;
+  margin-left: -80%; }
+
+div#wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+/*div#clients,
+div#Expertise,
+div#Associates{
+	position:absolute;
+	margin-top:-79px;
+}*/
+div#Associates,
+div#clients,
+div#Expertise,
+div#twitter,
+div#Contact {
+  position: relative;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform; }
+
+.container,
+div.row-fluid {
+  max-width: 1100px !important;
+  width: 100%; }
+
+div#top_area {
+  border-bottom: solid 2px #fd922e;
+  margin-top: -79px;
+  position: fixed;
+  opacity: .9;
+  width: 100%;
+  background: #fff;
+  z-index: 10000; }
+  div#top_area .container {
+    max-width: 1100px;
+    margin: 0 auto; }
+
+section {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden; }
+
+div.row-fluid {
+  background: #fff; }
+
+h3 {
+  line-height: 1em;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400; }
+
+div.no8m_logo {
+  max-width: 100%;
+  width: 100%; }
+  div.no8m_logo img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 25px auto; }
+
+div.main_menu {
+  font-size: 15px;
+  float: right; }
+  div.main_menu ul {
+    style: none;
+    width: 100%; }
+  div.main_menu li a {
+    display: block;
+    float: left;
+    padding: 30px 1.1vw 20px 1.2vw;
+    margin: 0 auto; }
+
+.home .row-fluid .span6 {
+  width: 50%; }
+
+div.home-left.span6 img,
+div.home-right.span6 img:last-of-type {
+  width: 100%; }
+
+div.home-right.span6 {
+  margin: 0 !important;
+  padding: 0 !important; }
+  div.home-right.span6 img {
+    width: 50%;
+    border: 0;
+    float: left; }
+
+div.tiled {
+  background: url(../images/bg-tile.gif);
+  text-align: center; }
+  div.tiled .mask {
+    background: #fff;
+    opacity: .8;
+    padding: 15px 20px;
+    margin: 25px auto;
+    width: 100%; }
+  div.tiled h3 {
+    margin-top: 10px;
+    color: #005d77; }
+    div.tiled h3 span {
+      color: #dd720e; }
+
+div.expertise {
+  background: #005d77;
+  padding-top: 65px; }
+  div.expertise div.holder {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 660px; }
+  div.expertise .row-fluid {
+    background: #005d77;
+    color: #ffffff; }
+    div.expertise .row-fluid h3 {
+      float: right;
+      margin-top: -45px;
+      margin-right: -5vw;
+      font-size: 22px; }
+    div.expertise .row-fluid ul {
+      margin: 0 auto;
+      padding-left: 100px; }
+      div.expertise .row-fluid ul li {
+        max-width: 380px; }
+  div.expertise li {
+    font-size: 16px;
+    height: 40px;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin-left: -50px;
+    padding-left: 50px;
+    line-height: 1.1em;
+    margin-top: 15px; }
+  div.expertise .expertise-left ul {
+    padding-bottom: 40px; }
+    div.expertise .expertise-left ul li:nth-of-type(1) {
+      background-image: url(../images/MarketingPlanning.png);
+      padding-top: 6px; }
+    div.expertise .expertise-left ul li:nth-of-type(2) {
+      background-image: url(../images/copyrighting.png); }
+    div.expertise .expertise-left ul li:nth-of-type(3) {
+      background-image: url(../images/launches.png);
+      padding-top: 6px; }
+    div.expertise .expertise-left ul li:nth-of-type(4) {
+      background-image: url(../images/Interim.png); }
+  div.expertise .expertise-right ul {
+    float: right; }
+    div.expertise .expertise-right ul li:nth-of-type(1) {
+      background-image: url(../images/twitter.png); }
+    div.expertise .expertise-right ul li:nth-of-type(2) {
+      background-image: url(../images/e-coms.png);
+      padding-top: 6px; }
+    div.expertise .expertise-right ul li:nth-of-type(3) {
+      background-image: url(../images/research.png); }
+    div.expertise .expertise-right ul li:nth-of-type(4) {
+      background-image: url(../images/speechbubble.png); }
+
+div.clients div.clients-main.span12 div {
+  text-align: center; }
+  div.clients div.clients-main.span12 div h3 {
+    font-size: 22px;
+    color: #005d77; }
+
+div.clients div.clients-main .span12 img {
+  display: block; }
+
+div.clients .clients-left .span6 img,
+div.clients .clients-right .span6 img {
+  display: none !important; }
+
+div.clients div.container div.row-fluid div.clients-left.span6,
+div.clients div.container div.row-fluid div.clients-right.span6 {
+  display: none; }
+
+div.Associates {
+  background: #f0f0f0;
+  padding-bottom: 5px;
+  overflow-y: hidden; }
+
+div.Associates-main {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 20px 0; }
+  div.Associates-main h3 {
+    font-size: 22px;
+    color: #fd922e; }
+
+div.Associates div.row-fluid {
+  background: #f0f0f0;
+  padding-bottom: 20px; }
+div.Associates div#pic_holder {
+  width: 100%;
+  margin: 0 auto; }
+div.Associates div.span3 div {
+  position: relative;
+  background: #fd922e;
+  width: 220px;
+  height: 183px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 auto;
+  line-height: 1.1em; }
+  div.Associates div.span3 div h3 {
+    line-height: 1.1em; }
+  div.Associates div.span3 div img {
+    position: absolute;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    padding-bottom: 20px; }
+  div.Associates div.span3 div img:hover {
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out; }
+
+div#Testimonial {
+  padding: 20px 0; }
+  div#Testimonial .container .custom {
+    background: #fff;
+    opacity: .8;
+    padding: 15px 20px;
+    margin: 25px auto;
+    width: 100%;
+    font-style: italic; }
+    div#Testimonial .container .custom p:last-of-type {
+      color: #dd720e; }
+
+div.clients div.clients-main.span12 div {
+  display: block; }
+
+.clients-left .span6,
+.clients-right .span6 {
+  display: none; }
+
+/*Twitter feed */
+div#twitter {
+  /*		word-break: break-all;*/ }
+  div#twitter .container {
+    background: #ffffff;
+    padding: 0 0px; }
+  div#twitter .twitter-feed .container {
+    background: transparent; }
+  div#twitter .wk-twitter-list article {
+    border: medium none;
+    border-left: solid 20px #fff;
+    border-right: solid 20px #fff; }
+  div#twitter .wk-twitter {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    background: transparent;
+    color: #000; }
+  div#twitter .wk-twitter a {
+    color: #000; }
+  div#twitter .wk-twitter article {
+    width: 25%;
+    float: left;
+    padding-top: 30px;
+    position: relative;
+    padding-bottom: 30px;
+    padding-right: 7px;
+    background-image: url(../images/yellow_bird.gif);
+    background-repeat: no-repeat;
+    background-position: top left; }
+  div#twitter .wk-twitter article:nth-of-type(1) {
+    margin-top: 5px; }
+  div#twitter .wk-twitter .image {
+    border: none;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    padding: 3px; }
+  div#twitter p.content {
+    font-size: 13px;
+    height: 120px;
+    line-height: 1.3em; }
+  div#twitter p.meta {
+    float: left;
+    margin-left: 60px;
+    font-size: 14px;
+    position: relative; }
+    div#twitter p.meta a.statuslink {
+      position: absolute;
+      left: 0px;
+      top: 2em; }
+
+/*get in touch*/
+div#Contact,
+div.footer,
+div.footer .row-fluid {
+  background: #005d77; }
+  div#Contact h3,
+  div.footer h3,
+  div.footer .row-fluid h3 {
+    color: white; }
+  div#Contact ul,
+  div.footer ul,
+  div.footer .row-fluid ul {
+    height: 100px;
+    max-width: 700px;
+    width: 100%;
+    margin: 10px auto;
+    color: #fff;
+    position: relative;
+    left: 70px; }
+    div#Contact ul li:nth-of-type(1),
+    div.footer ul li:nth-of-type(1),
+    div.footer .row-fluid ul li:nth-of-type(1) {
+      background-image: url(../images/telephone.png);
+      width: 190px;
+      padding-top: 2px; }
+    div#Contact ul li:nth-of-type(2),
+    div.footer ul li:nth-of-type(2),
+    div.footer .row-fluid ul li:nth-of-type(2) {
+      background-image: url(../images/email-icon.png);
+      padding-top: 3px;
+      width: 370px; }
+      div#Contact ul li:nth-of-type(2) a,
+      div.footer ul li:nth-of-type(2) a,
+      div.footer .row-fluid ul li:nth-of-type(2) a {
+        color: #fff; }
+    div#Contact ul li:nth-of-type(3),
+    div.footer ul li:nth-of-type(3),
+    div.footer .row-fluid ul li:nth-of-type(3) {
+      background-image: url(../images/twitter.png);
+      width: 165px;
+      padding-top: 3px;
+      padding-left: 35px; }
+      div#Contact ul li:nth-of-type(3) a,
+      div.footer ul li:nth-of-type(3) a,
+      div.footer .row-fluid ul li:nth-of-type(3) a {
+        color: #fff; }
+    div#Contact ul li:nth-of-type(4),
+    div.footer ul li:nth-of-type(4),
+    div.footer .row-fluid ul li:nth-of-type(4) {
+      margin: 0px auto;
+      background-image: url(../images/postalAddress.png);
+      width: 430px;
+      position: relative;
+      left: 70px; }
+    div#Contact ul li,
+    div.footer ul li,
+    div.footer .row-fluid ul li {
+      display: block;
+      float: left;
+      font-size: 15px;
+      height: 40px;
+      background-repeat: no-repeat;
+      list-style: none;
+      margin-left: -30px;
+      padding-left: 30px;
+      line-height: 1.1em;
+      margin-top: 15px; }
+
+.footer-left {
+  font-size: 11px;
+  line-height: 1.2em;
+  color: #fff;
+  padding-left: 20px;
+  padding-bottom: 30px; }
+
+.footer-right .custom {
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2em;
+  padding-bottom: 40px;
+  margin-right: 20px;
+  width: 250px; }
+  .footer-right .custom img {
+    padding-right: 10px; }
+
+@media only screen and (max-width: 1160px) {
+  .container {
+    width: 95%; }
+
+  div.main_menu.span6 {
+    margin-left: -32px;
+    width: 485px; }
+
+  div.Associates div#pic_holder {
+    width: 95%; } }
+@media only screen and (max-width: 1000px) {
+  p.meta {
+    font-size: 1.2vw !important; } }
+@media only screen and (max-width: 950px) {
+  body.site {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    background: #ffffff;
+    margin-top: 79px; }
+
+  div#clients,
+  div#Expertise,
+  div#Associates {
+    position: absolute;
+    margin-top: -106px; }
+
+  div.off-screen-left {
+    margin-top: 100px; }
+
+  div#wrapper {
+    width: 100%;
+    margin: 0 auto; }
+
+  body.site {
+    margin-top: -5px; }
+
+  div#top_area {
+    border-bottom: solid 2px #fd922e;
+    margin-top: -60px;
+    opacity: .9;
+    width: 100%;
+    background: #fff !important;
+    z-index: 10000; }
+    div#top_area .container {
+      max-width: 1100px;
+      margin-top: 60px; }
+
+  div#wrapper {
+    padding-top: 110px; }
+
+  div.main_menu {
+    display: none !important; }
+
+  div.no8m_logo.span6 {
+    position: absolute;
+    width: 100%;
+    display: block; }
+    div.no8m_logo.span6 img {
+      max-width: 360px;
+      margin: -40px auto;
+      width: 50%; }
+
+  div.clients div.clients-main.span12 div {
+    display: block; }
+
+  div.clients div.container div.row-fluid div.clients-left.span6,
+  div.clients div.container div.row-fluid div.clients-right.span6 {
+    display: none; }
+
+  div.Associates div#pic_holder {
+    width: 50%; }
+    div.Associates div#pic_holder div {
+      width: 50vw;
+      height: 41vw;
+      margin-bottom: 30px; }
+    div.Associates div#pic_holder img {
+      width: 50vw;
+      height: 45vw;
+      padding-bottom: 30px; }
+
+  .wk-twitter article {
+    width: 33% !important; }
+
+  .wk-twitter article:nth-of-type(4) {
+    display: none; }
+
+  p.meta {
+    float: left;
+    margin-left: 55px;
+    font-size: 1.5vw !important; }
+
+  .footer {
+    min-width: 768;
+    width: 100%; }
+
+  .footer-right div {
+    width: 260px;
+    margin: 0 auto; } }
+@media only screen and (max-width: 767px) {
+  body.site {
+    font-size: 2vw; }
+
+  .row-fluid {
+    width: 100%; }
+
+  div.home .home-left.span6 {
+    width: 100% !important; }
+
+  .home .row-fluid .span6 {
+    width: 100%; }
+
+  div.expertise div.holder {
+    width: 115%; }
+    div.expertise div.holder h3 {
+      text-align: center;
+      float: none;
+      margin: -30px auto 10px; }
+
+  div.expertise .expertise-right ul {
+    float: left;
+    padding-bottom: 10px; }
+
+  div.clients div.clients-main.span12 div img {
+    display: none; }
+
+  div.clients div.container div.row-fluid div.clients-left.span6,
+  div.clients div.container div.row-fluid div.clients-right.span6 {
+    display: inline-block;
+    width: 100%;
+    max-width: 780px; }
+    div.clients div.container div.row-fluid div.clients-left.span6 ul,
+    div.clients div.container div.row-fluid div.clients-right.span6 ul {
+      width: 100%;
+      list-style: none; }
+      div.clients div.container div.row-fluid div.clients-left.span6 ul li,
+      div.clients div.container div.row-fluid div.clients-right.span6 ul li {
+        margin: 0 auto;
+        float: left;
+        display: flex;
+        min-width: 45%; }
+        div.clients div.container div.row-fluid div.clients-left.span6 ul li img,
+        div.clients div.container div.row-fluid div.clients-right.span6 ul li img {
+          margin: 0 auto;
+          padding: 10px 0;
+          display: flex; }
+
+  div.Associates div#pic_holder {
+    width: 50%; }
+    div.Associates div#pic_holder div {
+      /*					width: 50vw;
+      height: 40vw;*/
+      margin-bottom: 10vw; }
+      div.Associates div#pic_holder div div.Associates div#pic_holder div {
+        height: 54vw;
+        width: 68vw; }
+      div.Associates div#pic_holder div h3 {
+        font-size: 5vw; }
+    div.Associates div#pic_holder img {
+      /*					width: 50vw;
+      height: 45vw;*/
+      height: 47vw;
+      width: 74vw;
+      padding-bottom: 30px; }
+
+  /*get in touch*/
+  div#Contact ul,
+  div.footer ul,
+  div.footer .row-fluid ul {
+    position: relative;
+    left: 20px;
+    width: 350px; }
+    div#Contact ul li,
+    div.footer ul li,
+    div.footer .row-fluid ul li {
+      display: block;
+      float: left !important;
+      font-size: 15px;
+      height: 40px;
+      background-repeat: no-repeat;
+      list-style: auto !important;
+      margin-left: -30px;
+      padding-left: 30px;
+      line-height: 1.1em;
+      margin-top: 15px; }
+    div#Contact ul li:nth-of-type(4),
+    div.footer ul li:nth-of-type(4),
+    div.footer .row-fluid ul li:nth-of-type(4) {
+      margin-left: -30px;
+      margin-top: 15px;
+      background-image: url(../images/postalAddress.png);
+      width: 430px;
+      position: relative;
+      left: 0px; }
+
+  div#twitter .container {
+    width: 100%; }
+
+  .wk-twitter article {
+    width: 50% !important; }
+    .wk-twitter article p.meta {
+      font-size: 1.8vw !important; }
+
+  .wk-twitter article:nth-of-type(2) {
+    float: right; }
+
+  .wk-twitter article:nth-of-type(3) {
+    display: none; } }
+@media only screen and (max-width: 530px) {
+  body.site {
+    font-size: 4vw; }
+
+  .container {
+    width: 100%;
+    overflow: hidden; }
+
+  div.expertise div.holder h3 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin: -45px auto 10px; }
+
+  div.expertise div.custom ul li {
+    width: 71vw; }
+
+  div.clients div.clients-main.span12 div img {
+    display: none; }
+
+  div.clients div.container div.row-fluid div.clients-left.span6,
+  div.clients div.container div.row-fluid div.clients-right.span6 {
+    display: inline; }
+    div.clients div.container div.row-fluid div.clients-left.span6 ul,
+    div.clients div.container div.row-fluid div.clients-right.span6 ul {
+      margin-left: -5px; }
+      div.clients div.container div.row-fluid div.clients-left.span6 ul li,
+      div.clients div.container div.row-fluid div.clients-right.span6 ul li {
+        margin: 0 auto;
+        float: none; }
+        div.clients div.container div.row-fluid div.clients-left.span6 ul li img,
+        div.clients div.container div.row-fluid div.clients-right.span6 ul li img {
+          margin: 0 auto;
+          padding: 10px 0;
+          text-align: center; }
+
+  div.Associates div#pic_holder {
+    width: 50%; }
+    div.Associates div#pic_holder div {
+      width: 50vw;
+      height: 36vw;
+      margin-bottom: 10vw; }
+      div.Associates div#pic_holder div h3 {
+        font-size: 5vw;
+        margin-top: 1vw; }
+    div.Associates div#pic_holder img {
+      width: 50vw;
+      height: 45vw;
+      padding-bottom: 20px; }
+
+  /*get in touch*/
+  div#Contact ul,
+  div.footer ul,
+  div.footer .row-fluid ul {
+    left: 10px;
+    width: 250px; }
+    div#Contact ul li,
+    div.footer ul li,
+    div.footer .row-fluid ul li {
+      font-size: 12px;
+      margin-left: -30px; }
+
+  .wk-twitter article {
+    width: 100% !important; }
+    .wk-twitter article p.meta {
+      font-size: 3vw !important; }
+
+  .wk-twitter article:nth-of-type(2) {
+    display: none; } }
+@media only screen and (min-width: 1515px) {
+  div#top_area {
+    height: 79px; }
+
+  .main_menu {
+    position: absolute;
+    margin-left: 550px !important; }
+
+  div.main_menu li a {
+    padding: 30px 1.1vw 20px 1.1vw;
+    margin: 0 auto; } }
+.cover {
+  height: 650%; }

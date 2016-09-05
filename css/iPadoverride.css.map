@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,gDAAiD;;;EAEjD,IAAI;IACJ,KAAK,EAAC,eAAe;;EAGrB,6CAA8C;IAC7C,QAAQ,EAAC,OAAO;IAChB,IAAI,EAAC,GAAG;IACR,KAAK,EAAC,KAAK;IACX,UAAU,EAAC,KAAK",
+"sources": ["../less/iPadoverride.scss"],
+"names": [],
+"file": "iPadoverride.css"
+}

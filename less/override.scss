@@ -12,6 +12,15 @@
 		background: #ffffff;
 		margin-top: 79px;
 	}
+#mask{ 
+	background:#000;
+	height:100vh;
+  position:fixed;
+	top:0vh;
+	width:100vw;
+	opacity:0;
+	z-index:2;
+}
 	div.mobile-menu-bar {
 		width: 180%;
 		padding-left: 80%;
@@ -22,30 +31,28 @@
 		width: 100%;
 		margin: 0 auto;
 	}
-
-
-/*div#clients,
+	/*div#clients,
 div#Expertise,
 div#Associates{
 	position:absolute;
 	margin-top:-79px;
 }*/
-#Associates,
-#clients,
-#Expertise,
-#twitter,
-#Contact {
-		position:relative;
-	//margin-top:-79px;
-	-webkit-transition-duration: 1s;
-	transition-duration: 1s;
-	-webkit-transition-property: -webkit-transform;
-	transition-property: -webkit-transform;
-	transition-property: transform;
-	transition-property: transform, -webkit-transform;
-}
-
-.container,
+	
+	#Associates,
+	#clients,
+	#Expertise,
+	#twitter,
+	#Contact {
+		position: relative;
+		//margin-top:-79px;
+		-webkit-transition-duration: 1s;
+		transition-duration: 1s;
+		-webkit-transition-property: -webkit-transform;
+		transition-property: -webkit-transform;
+		transition-property: transform;
+		transition-property: transform, -webkit-transform;
+	}
+	.container,
 	div.row-fluid {
 		max-width: 1100px !important;
 		width: 100%;
@@ -124,13 +131,6 @@ div#Associates{
 	div.tiled {
 		background: url(../images/bg-tile.gif);
 		text-align: center;
-		.mask {
-			background: #fff;
-			opacity: .8;
-			padding: 15px 20px;
-			margin: 25px auto;
-			width: 100%;
-		}
 		h3 {
 			margin-top: 10px;
 			color: $darkBlue;
@@ -264,7 +264,7 @@ div#Associates{
 			font-size: 12px;
 			margin: 0 auto;
 			line-height: 1.1em;
-			h3{
+			h3 {
 				line-height: 1.1em;
 			}
 			img {
@@ -288,7 +288,8 @@ div#Associates{
 			}
 		}
 	}
-	div#Testimonial {
+	div#Testimonial,
+	div#FlexibleAndCreative {
 		padding: 20px 0;
 		.container .custom {
 			background: #fff;
@@ -409,8 +410,8 @@ div#Associates{
 				width: 165px;
 				padding-top: 3px;
 				padding-left: 35px;
-				a{
-					color:#fff;
+				a {
+					color: #fff;
 				}
 			}
 			li:nth-of-type(4) {
@@ -450,16 +451,15 @@ div#Associates{
 		line-height: 1.2em;
 		padding-bottom:40px;
 		margin-right:20px;
-		width:250px; 
+		width:250px;
 	}
 	@media only screen and (max-width: 1160px) {
-				.container {
-		width: 95%;
+		.container {
+			width: 95%;
 		}
-		div.main_menu.span6{
-			margin-left:-32px;
+		div.main_menu.span6 {
+			margin-left: -32px;
 			width: 485px;
-
 		}
 		.Associates {
 			div#pic_holder {
@@ -471,7 +471,6 @@ div#Associates{
 		p.meta {
 			font-size: 1.2vw !important;
 		}
-		
 	}
 	@media only screen and (max-width: 950px) {
 		body.site {
@@ -480,12 +479,12 @@ div#Associates{
 			background: #ffffff;
 			margin-top: 79px;
 		}
-    #clients,
+		#clients,
 		#Expertise,
-		#Associates{
-	position:absolute;
-	margin-top:-106px;
-}
+		#Associates {
+			position: absolute;
+			margin-top: -106px;
+		}
 		div.off-screen-left {
 			margin-top: 100px;
 		}
@@ -526,17 +525,13 @@ div#Associates{
 				width: 50%;
 			}
 		}
-		
 		.clients div.clients-main.span12 div {
 			display: block;
 		}
-		
 		.clients div.container div.row-fluid div.clients-left.span6,
-		
 		.clients div.container div.row-fluid div.clients-right.span6 {
 			display: none;
 		}
-		
 		.Associates {
 			div#pic_holder {
 				width: 50%;
@@ -577,19 +572,18 @@ div#Associates{
 			font-size: 2vw;
 		}
 		.container {
-		//width: 90%;
+			//width: 90%;
 		}
 		.row-fluid {
 			width: 100%;
 		}
 		div.home .home-left.span6 {
-		//	max-width: 634px !important;
+			//	max-width: 634px !important;
 			width: 100% !important;
 		}
 		.home .row-fluid .span6 {
 			width: 100%;
 		}
-		
 		.expertise div.holder {
 			width: 115%;
 			h3 {
@@ -598,18 +592,14 @@ div#Associates{
 				margin: -30px auto 10px;
 			}
 		}
-		
 		.expertise .expertise-right ul {
 			float: left;
-			padding-bottom:10px;
+			padding-bottom: 10px;
 		}
-		
-		.clients div.clients-main.span12 div img{
+		.clients div.clients-main.span12 div img {
 			display: none;
 		}
-		
 		.clients div.container div.row-fluid div.clients-left.span6,
-		
 		.clients div.container div.row-fluid div.clients-right.span6 {
 			display: inline-block;
 			//background: #f00;
@@ -633,7 +623,6 @@ div#Associates{
 				}
 			}
 		}
-		
 		.Associates {
 			div#pic_holder {
 				width: 50%;
@@ -659,7 +648,6 @@ div#Associates{
 			}
 		}
 		/*get in touch*/
-		
 		#Contact,
 		div.footer,
 		div.footer .row-fluid {
@@ -689,7 +677,6 @@ div#Associates{
 				}
 			}
 		}
-		
 		#twitter .container {
 			width: 100%;
 		}
@@ -714,27 +701,21 @@ div#Associates{
 			width: 100%;
 			overflow: hidden;
 		}
-
-	
 		.expertise div.holder h3 {
-		position:absolute;
-  text-align: center;
-  //float: none;
-		//display:none;
-		width:100%;
-  margin: -45px auto 10px;
-}
-		
+			position: absolute;
+			text-align: center;
+			//float: none;
+			//display:none;
+			width: 100%;
+			margin: -45px auto 10px;
+		}
 		.expertise div.custom ul li {
 			width: 71vw;
 		}
-		
 		.clients div.clients-main.span12 div img {
 			display: none;
 		}
-		
 		.clients div.container div.row-fluid div.clients-left.span6,
-		
 		.clients div.container div.row-fluid div.clients-right.span6 {
 			display: inline;
 			//background: #f00;
@@ -752,7 +733,6 @@ div#Associates{
 				}
 			}
 		}
-		
 		.Associates {
 			div#pic_holder {
 				width: 50%;
@@ -773,7 +753,6 @@ div#Associates{
 			}
 		}
 		/*get in touch*/
-		
 		#Contact,
 		div.footer,
 		div.footer .row-fluid {
@@ -798,10 +777,8 @@ div#Associates{
 		}
 	}
 	@media only screen and (min-width: 1515px) {
-		
-
-div#top_area {
-  height: 79px;
+		div#top_area {
+			height: 79px;
 		}
 		.main_menu {
 			position: absolute;

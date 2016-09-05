@@ -8,6 +8,15 @@ body.site {
   background: #ffffff;
   margin-top: 79px; }
 
+#mask {
+  background: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0vh;
+  width: 100vw;
+  opacity: 0;
+  z-index: 2; }
+
 div.mobile-menu-bar {
   width: 180%;
   padding-left: 80%;
@@ -17,7 +26,7 @@ div#wrapper {
   width: 100%;
   margin: 0 auto; }
 
-/*div#clients,
+	/*div#clients,
 div#Expertise,
 div#Associates{
 	position:absolute;
@@ -108,12 +117,6 @@ div.home-right.span6 {
 div.tiled {
   background: url(../images/bg-tile.gif);
   text-align: center; }
-  div.tiled .mask {
-    background: #fff;
-    opacity: .8;
-    padding: 15px 20px;
-    margin: 25px auto;
-    width: 100%; }
   div.tiled h3 {
     margin-top: 10px;
     color: #005d77; }
@@ -240,16 +243,19 @@ div.tiled {
     -moz-transition: opacity .5s ease-in-out;
     -webkit-transition: opacity .5s ease-in-out; }
 
-div#Testimonial {
+div#Testimonial,
+div#FlexibleAndCreative {
   padding: 20px 0; }
-  div#Testimonial .container .custom {
+  div#Testimonial .container .custom,
+  div#FlexibleAndCreative .container .custom {
     background: #fff;
     opacity: .8;
     padding: 15px 20px;
     margin: 25px auto;
     width: 100%;
     font-style: italic; }
-    div#Testimonial .container .custom p:last-of-type {
+    div#Testimonial .container .custom p:last-of-type,
+    div#FlexibleAndCreative .container .custom p:last-of-type {
       color: #dd720e; }
 
 .clients div.clients-main.span12 div {

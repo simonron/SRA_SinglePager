@@ -109,9 +109,12 @@ else
 					<?php
 	}
 	$isiPad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
-	if ($isiPad)
+	if ($isiPad){
 	$doc->addStyleSheet('templates/'.$this->template.'/css/iPadoverride.css');
-			$doc->addScript('templates/'.$this->template.'/js/application.js');
+	};
+		$doc->addScript('templates/'.$this->template.'/js/jquery.js');
+		$doc->addScript('templates/'.$this->template.'/js/modernizr.js');
+		$doc->addScript('templates/'.$this->template.'/js/application.js');
 	?>
 
 
@@ -155,33 +158,13 @@ else
 						<meta name="msapplication-TileImage" content="/favicon-144.png">
 						<meta name="msapplication-config" content="/browserconfig.xml">
 						<!-- ****** faviconit.com favicons ****** -->
-						<script src="./js/jquery.js"></script>
-						<script src="./js/modernizr-2.0.6.js"></script>
-
-
 	</head>
 
-	<!--<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<body class="site">
+	
+			<script>
 
-  ga('create', 'UA-45770775-18', 'auto');
-  ga('send', 'pageview');
-
-</script>-->
-
-
-	<body class="site <?php echo $option
-	. ' view-' . $view
-	. ($layout ? ' layout-' . $layout : ' no-layout')
-	. ($task ? ' task-' . $task : ' no-task')
-	. ($itemid ? ' itemid-' . $itemid : '')
-	. ($params->get('fluidContainer') ? ' fluid' : '');
-?>">
-
-
+			</script>
 		<!-- Mobile sidebar -->
 		<div class='off-screen-left'>
 			<div class='container'>
@@ -191,12 +174,11 @@ else
 
 		<div class='cover' onclick='onClickCover()'></div>
 
-
-
 		<!-- Mobile Menu Button -->
 		<div class='mobile-menu-bar'>
 			<div class='mobile-menu-button' onclick='onClickMenu();'><span>&#9776;</span>&nbsp; Menu</div>
 		</div>
+		<div id="mask"></div>
 		<div id="wrapper">
 			<div id="top_area">
 				<div class='container'>
@@ -211,10 +193,6 @@ else
 				</div>
 			</div>
 
-
-
-
-
 			<span id="top_of_site"></span>
 			<section>
 				<div class="hero">
@@ -227,78 +205,77 @@ else
 					</div>
 				</div>
 			</section>
+
 			<section>
 				<div id="FlexibleAndCreative" class="tiled">
 					<div class="container">
-						<div class="mask">
-							<jdoc:include type="modules" name="FlexibleAndCreative" style="xhtml" />
-						</div>
+						<jdoc:include type="modules" name="FlexibleAndCreative" style="xhtml" />
 					</div>
 				</div>
 			</section>
 
 			<section class="expertise" id="Expertise">
-					<div class='container'>
-						<div class='row-fluid'>
-							<div class="holder">
-								<div class="expertise-left span6">
-									<jdoc:include type="modules" name="expertise-left" style="xhtml" />
-								</div>
-								<div class='expertise-right span6'>
-									<jdoc:include type="modules" name="expertise-right" style="none" />
-								</div>
+				<div class='container'>
+					<div class='row-fluid'>
+						<div class="holder">
+							<div class="expertise-left span6">
+								<jdoc:include type="modules" name="expertise-left" style="xhtml" />
+							</div>
+							<div class='expertise-right span6'>
+								<jdoc:include type="modules" name="expertise-right" style="none" />
 							</div>
 						</div>
 					</div>
-			
+				</div>
+
 			</section>
 			<section class="clients" id="clients">
-				
-					<div class='container'>
-						<div class='row-fluid'>
-							<div class="clients-main span12">
-								<jdoc:include type="modules" name="clients-main" style="xhtml" />
-							</div>
-						</div>
-						<div class='row-fluid'>
-							<div class="clients-left span6">
-								<jdoc:include type="modules" name="clients-left" style="none" />
-							</div>
-							<div class='clients-right span6'>
-								<jdoc:include type="modules" name="clients-right" style="none" />
-							</div>
+
+				<div class='container'>
+					<div class='row-fluid'>
+						<div class="clients-main span12">
+							<jdoc:include type="modules" name="clients-main" style="xhtml" />
 						</div>
 					</div>
-	
+					<div class='row-fluid'>
+						<div class="clients-left span6">
+							<jdoc:include type="modules" name="clients-left" style="none" />
+						</div>
+						<div class='clients-right span6'>
+							<jdoc:include type="modules" name="clients-right" style="none" />
+						</div>
+					</div>
+				</div>
+
 
 			</section>
 			<section class="Associates" id="Associates">
-			
-					<div class='container'>
-						<div class='row-fluid'>
-							<div class="Associates-main span12">
-								<jdoc:include type="modules" name="Associates-main" style="xhtml" />
-							</div>
+
+				<div class='container'>
+					<div class='row-fluid'>
+						<div class="Associates-main span12">
+							<jdoc:include type="modules" name="Associates-main" style="xhtml" />
 						</div>
-						<div class='row-fluid'>
-							<div id="pic_holder">
-								<div class="Associates-left span3">
-									<jdoc:include type="modules" name="Associates-left" style="none" />
-								</div>
-								<div class="Associates-left-m span3">
-									<jdoc:include type="modules" name="Associates-left-m" style="none" />
-								</div>
-								<div class='Associates-right-m span3'>
-									<jdoc:include type="modules" name="Associates-right-m" style="none" />
-								</div>
-								<div class='Associates-right span3'>
-									<jdoc:include type="modules" name="Associates-right--" style="none" />
-								</div>
+					</div>
+					<div class='row-fluid'>
+						<div id="pic_holder">
+							<div class="Associates-left span3">
+								<jdoc:include type="modules" name="Associates-left" style="none" />
+							</div>
+							<div class="Associates-left-m span3">
+								<jdoc:include type="modules" name="Associates-left-m" style="none" />
+							</div>
+							<div class='Associates-right-m span3'>
+								<jdoc:include type="modules" name="Associates-right-m" style="none" />
+							</div>
+							<div class='Associates-right span3'>
+								<jdoc:include type="modules" name="Associates-right--" style="none" />
 							</div>
 						</div>
 					</div>
+				</div>
 			</section>
-			
+
 			<section>
 				<div id="Testimonial" class="tiled">
 					<div class="container">
@@ -306,18 +283,18 @@ else
 					</div>
 				</div>
 			</section>
-			
+
 			<section id="twitter">
-					<div class="container">
-						<jdoc:include type="modules" name="twitter" style="none" />
-					</div>
+				<div class="container">
+					<jdoc:include type="modules" name="twitter" style="none" />
+				</div>
 			</section>
-			
+
 			<section id="Contact">
-					<!--Get in touch-->
-					<div class="container">
-						<jdoc:include type="modules" name="contact" style="xhtml" />
-					</div>
+				<!--Get in touch-->
+				<div class="container">
+					<jdoc:include type="modules" name="contact" style="xhtml" />
+				</div>
 
 				<!-- Footer -->
 				<!--Get in touch as well-->
@@ -337,96 +314,7 @@ else
 					</div>
 				</div>
 			</section>
-			<script src="./js/jquery.js"></script>
-			<script>
-				$(function() {
-					console.log("THING called");
-					$('a[href*="#"]:not([href="#"])').click(function() {
-						//hijacks the anchor click action and does this >---
-						move_this = this.hash;
-						console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX   link " + move_this + " clicked");
-						sra_menu(move_this);
-						closeMenu();// closes mobile menu - even if already closed
-					});
-				});
 
-				function sra_menu(move_this) {
-					displayed_content = move_this;
-					var offset = 0;
-					display_here_top = $(top_of_site).offset().top;
-					displayed_content_top = $(displayed_content).offset().top;
-					console.log(displayed_content +" top is " + displayed_content_top);
-					move_here_y = (displayed_content_top - display_here_top);
-					console.log("move_here_y= " + move_here_y);
-
-					
-					//resets last moved section if it has been moved
-					if (typeof last_content != 'undefined') {
-						console.log("last_content = " + last_content);
-						if (displayed_content != last_content) {
-							console.log(" -------------  transform state of last_content" + last_content + " = " + $(last_content).css("transform"));
-							$(last_content).css("transform", "none");
-							//$(last_content).css("position", "relative");
-							$(last_content).css("border", "solid 0px");
-							$(last_content).css("padding-top", "0");
-							console.log("RESETTING");
-							console.log(" #############  RESETTING transform state of last_content" + last_content + " = " + $(last_content).css("transform"));
-							last_content = displayed_content;
-							console.log(" after last_content = displayed_content = " + last_content);
-						}
-					}
-					 else {
-						console.log("last_content NOT SET")
-					};
-
-
-					console.log(" #############  transform state of " + displayed_content + " = " + $(displayed_content).css("transform"));
-
-
-					if ($(displayed_content).css("transform") == 'none') {
-						$(displayed_content).css("transform", "translate(0px,-" + move_here_y + "px)"); // moves current piece up from original place to just under menu at the top
-
-						//$(displayed_content).css("top", "100vh)");
-						//$(displayed_content).css("position", "relative");
-						//$(last_content).css("position", "relative");
-						$(displayed_content).css("z-index", "1000");
-						$(last_content).css("z-index","0");
-						$(displayed_content).css("border-bottom", "solid 100vh rgba(0,0,0,0.5)");
-						$(displayed_content).css("padding-top", "100vh");
-						$(displayed_content).css("border-left", "solid 10vw rgba(0,0,0,0.5)");
-						$(displayed_content).css("border-right", "solid 10vw rgba(0,0,0,0.5)");
-						$(displayed_content).css("border-top", "solid 10vh rgba(0,0,0,0.5)");
-						$(wrapper).css("overflow-y", "scroll");
-
-						$("body").css("overflow-y", "hidden");
-
-
-						//$(displayed_content).fadeIn();
-						//
-						/*		var elements =  $('.container :not('+displayed_content+' .container)');
-									$(elements).fadeOut();
-								console.log(elements);
-								$(displayed_content).fadeIn();*/
-
-					} else {
-						$("body").css("overflow-y", "scroll");
-						$(wrapper).css("overflow-y", "auto");
-						$(displayed_content).css("transform", "none");
-						//$(displayed_content).css("position", "relative");
-						$(displayed_content).css("border", "solid 0px");
-						$(displayed_content).css("padding-top", "0");
-
-
-
-
-
-
-						/*		$(displayed_content).css("transform", "translate(auto auto )");*/
-						console.log("reset?");
-					}
-					last_content = displayed_content;
-				}
-			</script>
 
 			<script>
 				document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

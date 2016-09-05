@@ -27,9 +27,7 @@
 						if (displayed_content != last_content) {
 							console.log(" -------------  transform state of last_content" + last_content + " = " + $(last_content).css("transform"));
 							$(last_content).css("transform", "none");
-							//$(last_content).css("position", "relative");
-							$(last_content).css("border", "solid 0px");
-							$(last_content).css("padding-top", "0");
+							$(mask).css("opacity","0");
 							console.log("RESETTING");
 							console.log(" #############  RESETTING transform state of last_content" + last_content + " = " + $(last_content).css("transform"));
 							last_content = displayed_content;
@@ -46,38 +44,19 @@
 					if ($(displayed_content).css("transform") == 'none') {
 						$(displayed_content).css("transform", "translate(0px,-" + move_here_y + "px)"); // moves current piece up from original place to just under menu at the top
 
-						//$(displayed_content).css("top", "100vh)");
-						//$(displayed_content).css("position", "relative");
-						//$(last_content).css("position", "relative");
-						$(displayed_content).css("z-index", "1000");
-						//$(last_content).css("z-index","0");
-						//$(displayed_content).css("border-bottom", "solid 100vh rgba(0,0,0,0.5)");
-						//$(displayed_content).css("padding-top", "100vh");
-						$(displayed_content).css("border-left", "solid 10vw rgba(0,0,0,0.5)");
-						$(displayed_content).css("border-right", "solid 10vw rgba(0,0,0,0.5)");
-						//$(displayed_content).css("border-top", "solid 10vh rgba(0,0,0,0.5)");
+						$(displayed_content).css("z-index", "10");
+						$(mask).css("opacity","0.5");
 						$(wrapper).css("overflow-y", "scroll");
-						$(mask).css("background", "rgba(0,0,0,0.5)");
 
 							$("body").css("overflow-y", "hidden");
-
-
-							//$(displayed_content).fadeIn();
-							//
-							/*		var elements =  $('.container :not('+displayed_content+' .container)');
-										$(elements).fadeOut();
-									console.log(elements);
-									$(displayed_content).fadeIn();*/
 
 						} else {
 							$("body").css("overflow-y", "scroll");
 							$(wrapper).css("overflow-y", "auto");
 							$(displayed_content).css("transform", "none");
-							//$(displayed_content).css("position", "relative");
-							$(displayed_content).css("border", "solid 0px");
-							$(displayed_content).css("padding-top", "0");
-							/*		$(displayed_content).css("transform", "translate(auto auto )");*/
+							$(mask).css("opacity","0");
 							console.log("reset?");
+							$(displayed_content).css("z-index", "1");
 						}
 						last_content = displayed_content;
 					}
@@ -88,7 +67,6 @@ function onClickMenu() {
 	console.log("onClickMenu called");
 	console.log("open = "+open);
 
-	//if (parseInt(jQuery('.body').css('left')) >= 80) {
 	if (open == true) {
 		closeMenu();
 	} else {
